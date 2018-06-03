@@ -1,0 +1,619 @@
+@font-face {
+  font-family: Alcubierre;
+  src: url(Alcubierre.otf);
+}
+
+body{
+  font: 100 18px system-ui;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 15vw 85vw;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.search-nav {
+  grid-template-columns: 4rem 1fr 4rem 4rem 4rem;
+  display: grid;
+  width: 100%;
+}
+
+.hamburger-button {
+  background: none;
+  font-size: 2rem;
+  color: #00BCD4;
+}
+
+.search-box {
+  display: inline-block;
+  background: none;
+  border: groove 1px #DBDBE6;;
+}
+
+.search-buttons {
+  border: groove 1px #DBDBE6;;
+  display: inline-block;
+  height: 3.8rem;
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-position: 45% 30%;
+  background-color: #D0F0C0;
+}
+
+.search-buttons:hover {
+  background-color: #9EDEA0;
+  color: white;
+}
+
+.league-icon {
+  background-image: url("Images/league-of-legends.png");
+}
+
+.hex-icon {
+  background-image: url("Images/hex-icon.png");
+}
+
+.amumu-showcase {
+  background-image: url("Images/amumu-showcase.png");
+  background-size: 4rem;
+}
+
+.main-content {
+  background-color: #D0F0C0;
+  background-size: 90rem;
+}
+
+.profile-header {
+  grid-template-rows: 1fr 1fr;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.abilities-buttons {
+  position: relative;
+  bottom: 2rem;
+  display: grid;
+  grid-template-columns: 8rem 1fr 1fr 1fr;
+}
+
+.span-abilities-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.abilities {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50px;
+  background-repeat:no-repeat;
+  background-size: 2.5rem;
+  margin: 0 .3rem;
+}
+
+.bandage-toss {
+  background-image: url("Images/bandage-toss.png");
+
+}
+
+.despair {
+  background-image: url("Images/despair.png");
+
+}
+
+.tantrum {
+  background-image: url("Images/tantrum.png");
+}
+
+.shurima {
+  height: 1.2rem;
+  width: 1.2rem;
+  background-image: url("Images/shurima.png");
+  background-size: 1.2rem;
+  margin: 0 .5rem 0 0;
+  border: none;
+}
+
+.location {
+ color: red;
+ margin: 0;
+}
+
+.preview {
+  color: green;
+  margin: 1rem;
+}
+
+.lol-button {
+  background-image: url("Images/lol-title.png");
+  background-size: 6rem;
+  background-color: #ABD050;
+  width: 6.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 1px groove #67AC5B;
+  background-position: 50% 0;
+}
+
+.content-nav {
+  margin: 2rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main-nav {
+  font-size: 1rem;
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: gray;
+  transition: font-weight .5s;
+}
+
+.main-nav:hover {
+  font-weight: 800;
+  color: black;
+  border-bottom: 3px solid #43A3F3;
+  color: #6a6e77;
+}
+
+
+main {
+  border: groove 2px #DBDBE6;
+  height: 100%;
+  background-color: #BDD95C;
+  background-size: 90rem;
+  filter: grayscale(40%);
+  filter: gray;
+  transition: 1s ease;
+  width: 100%;
+}
+main:hover {
+  filter:grayscale(10%);
+}
+
+.charts-graphs{
+  margin: 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 40rem;
+}
+
+
+}
+
+.kills,
+.deaths,
+.assists{
+}
+
+
+.charts-buttons {
+  margin: 0 16rem 0 13rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.graph-button {
+  height: 2rem;
+  width: 13rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: solid 2px #2aa3cc; 
+  background: none;
+}
+
+.picks-game {
+  width: 9rem;
+}
+
+.profile-contents {  
+  min-width: 12rem;
+  background-color: #32A984;
+  color: #0a0a0a;
+  border-right: 1px solid #c2c2c2;
+  box-shadow: 1px 1px 2px #eee;
+  height: 212.5vh;
+  box-sizing: inherit;
+}
+
+.line-breakpoint {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1.5rem 0;
+  width: 102%;
+  background-image: url("Images/up-arrow.png");
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.section-table-breakpoint {
+    width: 42%;
+    padding: 0;
+    margin: 2.2rem 1.5rem
+}
+
+.information-content {
+  margin: 4rem 0 4rem 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+}
+
+.position,
+.miscellaneous {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  color: #2aa3cc;
+  display: grid;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+}
+
+.c {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  color: #2aa3cc;
+  display: grid;
+  grid-template-rows:1fr 1fr 1fr;
+}
+
+.aside-title {
+  color: #00BCD4;
+  font-size: .8rem;
+  background-color: #008B7D;
+  border-color: #008B7D;
+  text-align: left;
+  background-image: url("Images/rank.png");
+  background-repeat: no-repeat;
+  background-size: 7.5rem;
+  background-position: 100% 55%;
+}
+
+.role,
+.misc,
+.maps {
+  padding:1rem 3rem;
+  background-color: #32A984;
+  background-repeat: no-repeat;
+  font-size: .8rem;
+  color: #EDDC8B;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+
+.role:hover,
+.misc:hover,
+.maps:hover {
+  background-color: #47C16D;
+}
+
+.role{
+  background-size: 1.8rem;
+  background-position: .5rem .6rem;
+}
+.top {
+  background-image: url("Images/tank.png");
+}
+
+.jungle {
+  background-image: url("Images/jungle.png");
+  background-size: 1.9rem;
+  background-position: .5rem .4rem;
+}
+
+.mid {
+  background-image: url("Images/mid.png");
+  background-position: .55rem .5rem;
+  background-size: 1.7rem;
+}
+
+.adc {
+  background-image: url("Images/adc.png");
+  background-position:
+}
+
+.support {
+  background-image: url("Images/support.png");
+}
+
+.misc {
+  background-size: 1.8rem;
+  background-position: .5rem .6rem;
+}
+
+.summoners {
+  background-image: url("Images/targon.png");
+}
+
+.items {
+  background-image: url("Images/items.png");
+}
+
+.masteries {
+  background-image: url("Images/controller.png");
+}
+
+.runes {
+  background-image: url("Images/specialist.png");
+}
+
+.skins {
+  background-image: url("Images/shurima-icon.png");
+}
+
+.maps {
+  background-size: 1.8rem;
+  background-position: .5rem .6rem;
+}
+.summoners-rift {
+  background-image: url("Images/top-lane.png");
+}
+
+.aram {
+  background-image: url("Images/mid-lane.png");
+}
+
+.treeline {
+  background-image: url("Images/bot-lane.png");
+
+}
+
+.aside-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.amumu-logo {
+  border-radius: 50px;
+  background-color: #8AB996;
+  background-image: url("Images/Amumu-profile.png");
+  background-size: 5rem;
+  height: 5rem;
+  width: 5rem;
+  background-repeat: no-repeat;
+  margin: 2rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.amumu-logo:hover {
+  background-image: url("Images/amumu.gif");
+}
+
+.amumu {
+  font: 800 18px system-ui;
+  color: #EDDC8B;
+  text-align: center;
+  margin-top: 0;
+
+}
+
+
+.kill-number,
+.death-number,
+.assist-number {
+  font-size: .4rem;
+  color: yellow;
+}
+
+.item-title {
+  width: 10rem;
+}
+
+.item-value {
+  width: 30rem;
+  padding-left: 0;
+}
+.champion-content-table {
+  min-width: 37rem;
+  height: 40rem;
+  padding: 0 4rem;
+  border-collapse: collapse;
+  margin: 0 0 0 4rem;
+}
+
+td {
+  vertical-align: baseline;
+  padding: 2rem 2rem 2rem 2rem;
+  border: 1px groove lightgray;
+  border-left: none;
+  border-right: none;
+}
+
+.table-header{
+  background-color: #9EDEA0;
+}
+.table-header:hover{
+  filter: grayscale(0);
+}
+
+tr {
+  background-color: #D0F0C0;
+  background-size: 60rem;
+  filter: grayscale(0);
+  filter: gray;
+  transition: .5s ease;
+
+}
+tr:hover {
+  background-color: #D7EA4E;
+}
+
+.game-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.social {
+  padding: 13px 35px 12px;
+  height: 3.4rem;
+  width: 22vw;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  margin: .5rem ;
+  border-radius: 5px;
+}
+
+.discord {
+  margin-top: 0;
+  background-image: url("Images/discord.png");
+  transition: all ease .5s;
+  background-color: #8C9EF6;
+}
+
+.youtube {
+  background-image: url("Images/youtube.png");
+  background-color: #E06453;
+}
+
+.telegram {
+  background-image: url("Images/telegram.png");
+  background-color: #73A8D7;
+  background-size: 2.5rem;
+  background-position: 1% 20%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-form {
+  display: grid;
+  grid-template-columns: 4.5fr 1fr; 
+}
+
+.game-quotes {
+  height: 2.5rem;
+}
+
+.send-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0 2.4rem;
+}
+
+.braum-quote {
+  margin-top: 2rem;
+}
+
+hr{
+  margin: 2.2rem 2.5rem;
+  width: 22.5vw;
+}
+
+h4 {
+  margin:0;
+}
+
+.ingame-quote {
+
+}
+
+
+figcaption {
+  text-align: center;
+}
+
+
+.circular-chart {
+  display: block;
+  margin: 0;
+  max-width: 10rem;
+
+  min-width: 10rem;
+
+}
+
+.kills,
+.assists,
+.deaths {
+  margin: auto;
+}
+
+
+.circle {
+  stroke: #4CC790;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.bar {
+  fill: #aaa;
+  height: 100px;
+  transition: fill .3s ease;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  
+  text {
+    fill: #555;
+  }
+}
+
+.chart{
+  margin: 1rem 0 0 4rem;
+  padding: 0 10rem 0 0;
+
+}
+.chart:hover,
+.chart:focus {
+  .bar {
+    fill: black;
+  }
+}
+/*BAR GRAPHS*/
+.bar:hover,
+.bar:focus {
+  fill: #4cc790;
+}
+
+.bar1,
+.bar4 {
+  fill: green;
+}
+.bar2,
+.bar5 {
+  fill: #6FB8F6;
+}
+.bar3,
+.bar6 {
+  fill: #8DB711;
+}
+.bar4
+.bar5
+.bar6
+
+@media screen and (max-height: 1330px)
+
+@media screen and (max-height: 1270px)
+
