@@ -66,6 +66,13 @@ button {
   background-size: 90rem;
 }
 
+.curse-title {
+  font-family: Optima, sans-serif;
+  font-size: 3rem;
+  color: ;
+  margin: 0
+}
+
 .profile-header {
   grid-template-rows: 1fr 1fr;
   padding: 2rem 2rem 0 2rem;
@@ -108,22 +115,31 @@ button {
 }
 
 .shurima {
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1.8rem;
+  width: 2rem;
   background-image: url("Images/shurima.png");
-  background-size: 1.2rem;
-  margin: 0 .5rem 0 0;
+  background-size: 2rem;
+  margin: auto .5rem auto 0;
   border: none;
+  background-color: #D0F0C0;
 }
 
+.title-header{
+  
+}
 .location {
- color: red;
+ color: #AA915C;
  margin: 0;
 }
 
 .preview {
   color: green;
   margin: 1rem;
+  cursor: pointer;
+}
+
+.preview:hover {
+  color: #4CC790;
 }
 
 .lol-button {
@@ -178,7 +194,7 @@ main:hover {
 }
 
 .charts-graphs{
-  margin: 0 4rem;
+  margin: 2rem 4rem 0 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 40rem;
 }
@@ -193,7 +209,7 @@ main:hover {
 
 
 .charts-buttons {
-  margin: 0 16rem 0 13rem;
+  margin: 0 16rem 0 25rem;
   display: flex;
   justify-content: space-between;
 }
@@ -217,7 +233,7 @@ main:hover {
   color: #0a0a0a;
   border-right: 1px solid #c2c2c2;
   box-shadow: 1px 1px 2px #eee;
-  height: 212.5vh;
+  height: 168.8.5vh;
   box-sizing: inherit;
 }
 
@@ -258,9 +274,9 @@ main:hover {
   list-style-type: none;
   margin:0;
   padding: 0;
-  color: #2aa3cc;
+  color: yellow;
   display: grid;
-  grid-template-rows:1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .aside-title {
@@ -292,12 +308,14 @@ main:hover {
 .misc:hover,
 .maps:hover {
   background-color: #47C16D;
+  border-left: 3px solid #EDDC8B;
 }
 
 .role{
   background-size: 1.8rem;
   background-position: .5rem .6rem;
 }
+
 .top {
   background-image: url("Images/tank.png");
 }
@@ -406,11 +424,16 @@ main:hover {
 
 .item-title {
   width: 10rem;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  background-size: 3rem;
+  background-position: 75% 45%;
 }
 
 .item-value {
   width: 30rem;
   padding-left: 0;
+
 }
 .champion-content-table {
   min-width: 37rem;
@@ -429,7 +452,12 @@ td {
 }
 
 .table-header{
+  background-image: url(Images/amumu-smiling.png);
+  background-size: 3rem;
+  background-position: 20% 35%;
+  background-repeat: no-repeat;
   background-color: #9EDEA0;
+}
 }
 .table-header:hover{
   filter: grayscale(0);
@@ -437,7 +465,6 @@ td {
 
 tr {
   background-color: #D0F0C0;
-  background-size: 60rem;
   filter: grayscale(0);
   filter: gray;
   transition: .5s ease;
@@ -446,6 +473,43 @@ tr {
 tr:hover {
   background-color: #D7EA4E;
 }
+
+.mr {
+  background-image: url("Images/attack-rune.png");
+}
+
+.health-regen {
+  background-image: url("Images/christmas-rune.png");
+}
+
+.armor {
+  background-image: url("Images/halloween-rune.png");
+}
+
+.mana {
+  background-image: url("Images/ghost-rune.png");
+
+}
+
+.background {
+
+  background-image: url("Images/lore-png.png");
+  background-size: 7rem;
+  background-position: 82%;
+
+}
+
+.friends {
+  background-image: url("Images/friends.png");
+  background-size: 3.5rem;
+  background-position-x : 76%
+
+}
+
+.quotes {
+  background-image: url("Images/quotes-png.png");
+}
+
 
 .game-buttons {
   display: flex;
@@ -470,6 +534,7 @@ tr:hover {
   background-repeat: no-repeat;
   margin: .5rem ;
   border-radius: 5px;
+  letter-spacing: .2rem;
 }
 
 .discord {
@@ -609,11 +674,91 @@ figcaption {
 .bar6 {
   fill: #8DB711;
 }
-.bar4
-.bar5
-.bar6
 
-@media screen and (max-height: 1330px)
 
-@media screen and (max-height: 1270px)
 
+@media screen and (max-width: 1380px){
+
+  .charts-graphs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .bar-chart{
+    margin: 3rem auto;
+    grid-column: 3 span;
+  }
+
+  .information-content {
+    margin: 4rem 0 4rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .links-breakpoint {
+    display: none;
+  }
+
+  .game-buttons {
+    flex-direction: row;
+  }
+  .social {
+    margin: 2rem .5rem;
+  }
+
+  .champion-content-table {
+    margin: 0 5vw;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    margin: 0 6.5vw;
+  }
+
+  .braum-quote {
+    margin: 0;
+  }
+
+  .send-links {
+    padding: 0 .5rem;
+  }
+
+  .charts-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .kda {
+    position: relative;
+    bottom: 22rem;
+  }
+
+  .picks-game {
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .line-breakpoint {
+    margin-top: -2rem;
+  }
+}
+
+@media screen and (max-width: 1280px){
+  
+  .profile-contents{
+    display: none;    
+  }
+
+  body {
+    font: 100 18px system-ui;
+    display: grid;
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media screen and (max-width: 810px){

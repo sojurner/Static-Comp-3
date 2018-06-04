@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Amumu</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Static Composition 3</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="normalize.css"> -->
 </head>
 <body>
   <section class="profile-contents">
@@ -30,9 +31,9 @@
     </nav>
     <nav class="c">
       <button class="aside-title">MAPS</button>
-      <button class="maps summoners-rift">S. RIFT</button>
-      <button class="maps aram">ARAM</button>
-      <button class="maps treeline">T. TREELINE</button>
+      <button class="maps summoners-rift"><input type="checkbox">S. RIFT</button>
+      <button class="maps aram"><input type="checkbox">ARAM</button>
+      <button class="maps treeline"><input type="checkbox">T. TREELINE</button>
     </nav>  
   </section>
   <section class="main-content">
@@ -46,10 +47,10 @@
       </nav>
       <section class="profile-header">
         <section class="title-header">
-          <h2>The Sad Mummy</h2>
+          <h2 class="curse-title">The Sad Mummy</h2>
           <section class="span-abilities-section">
             <span class="location-preview location"><button class="shurima"></button>Shurima
-              <span class="location-preview preview">Greed & Tears</span>
+              <span class="location-preview preview">Story Preview</span>
             </span>
             <span class="abilities-buttons">
               <button class="lol-button"></button>
@@ -86,7 +87,7 @@
         <figure class="deaths">
           <svg viewbox="0 0 36 36" class="circular-chart">
           <path class="circle"
-          stroke-dasharray="50, 100"
+          stroke-dasharray="60, 100"
           d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -98,7 +99,7 @@
         <figure class="assists">
           <svg viewbox="0 0 36 36" class="circular-chart">
           <path class="circle"
-          stroke-dasharray="25, 100"
+          stroke-dasharray="75, 100"
           d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -107,7 +108,7 @@
           </svg>
           <figcaption>Assists</figcaption>
         </figure>
-        <figure>
+        <figure class="bar-chart">
           <figcaption></figcaption>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chart" width="420" height="200" aria-labelledby="title" role="img">
           <g class="bar bar1">
@@ -149,34 +150,34 @@
         <table "width: 100% class="champion-content-table">
           <tr class="table-header">
             <td class="item-title">Description</td>
-            <td class="item-value">ds</td>
+            <td class="item-value table-button">asd</td>
           </tr>
           <tr>
-            <td class="item-title">Magic Resist.</td>
+            <td class="item-title mr">Magic Resist.</td>
             <td class="item-value">9 - 23.5</td>
           </tr>
           <tr>
-            <td class="item-title">Health Regen.</td>
+            <td class="item-title health-regen">Health Regen.</td>
             <td class="item-value">32 - 53</td>
           </tr>
           <tr>
-            <td class="item-title">Armor</td>
+            <td class="item-title armor">Armor</td>
             <td class="item-value">33 - 97</td>
           </tr>
           <tr>
-            <td class="item-title">Mana</td>
+            <td class="item-title mana">Mana</td>
             <td class="item-value">287 - 967</td>
           </tr>
           <tr>  
-            <td class="item-title">Description</td>
+            <td class="item-title background">Background</td>
             <td class="item-value">Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his Cursed Touch touch is death, his affection ruin. Amumu has inspired myths, songs, and folklore told and retold for generations such that it is impossible to separate truth from fiction.</td>
           </tr>
           <tr> 
-            <td class="item-title">Friends</td>
-            <td class="item-value">Annie</td>
+            <td class="item-title friends">Friends</td>
+            <td class="item-value annie">Annie</td>
           </tr>
           <tr>
-            <td class="item-title">Quotes</td>
+            <td class="item-title quotes">Quotes</td>
             <td class="item-value">"Let me give you a hug"</td>
           </tr>
 
@@ -196,7 +197,7 @@
                 <button>Copy</button>
               </form>
             </section>
-            <hr>
+            <hr class="links-breakpoint">
             <section class="send-links">
               <h4>asdfa</h4>
               <p class="ingame-quote">"The darker the night, the brighter the stars."</p>
@@ -205,7 +206,7 @@
                 <button>Copy</button>
               </form>
             </section>
-            <hr>
+            <hr class="links-breakpoint">
             <section class="send-links">
               <h4>Download</h4>
               <p class="ingame-quote">"Our seasons are reversed: my spring, your fall."</p>
