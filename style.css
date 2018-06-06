@@ -8,6 +8,12 @@ body {
 
 button {
   cursor: pointer;
+  filter: grayscale(1%);
+  transition: .5s ease;
+}
+
+button:hover {
+  filter: grayscale(50%);
 }
 /*Sidebar*/
 .profile-contents {  
@@ -510,6 +516,7 @@ figcaption {
   background-size: 2rem;
   background-repeat: no-repeat;
   background-position: 50%;
+  cursor: pointer;
 }
 
 .section-table-breakpoint-left {
