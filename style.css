@@ -463,9 +463,8 @@ figcaption {
   font-size: 1rem;
 }
 
-.bar-chart-one {
-  grid-column-start: 5;
-  grid-column-end: 6;
+.bar-chart-one{
+  margin: 0 3rem;
 }
 
 .bar-chart-two {
@@ -623,7 +622,7 @@ tr:hover {
 }
 
 .friends {
-  background-image: url("Images/friends.png");
+  background-image: url("Images/annie.png");
   background-size: 3.5rem;
   background-position-x : 80%;
 }
