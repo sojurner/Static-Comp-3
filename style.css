@@ -395,7 +395,7 @@ main:hover {
 .charts-graphs{
   margin: 2rem 5rem 0 5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 40rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
 }
 
 .charts-buttons {
@@ -463,8 +463,9 @@ figcaption {
   font-size: 1rem;
 }
 
-.bar-chart-one{
-  margin: 0 3rem;
+.bar-chart-one {
+  grid-column-start: 5;
+  grid-column-end: 6;
 }
 
 .bar-chart-two {
