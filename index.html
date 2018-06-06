@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Static Composition 3</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="normalize.css"> -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Static Composition 3</title>
 </head>
 <body>
   <section class="profile-contents">
@@ -29,18 +29,20 @@
       <button class="misc runes">RUNES</button>
       <button class="misc skins">SKINS</button>
     </nav>
-    <nav class="c">
+    <nav class="mapss">
       <button class="aside-title">MAPS</button>
-      <button class="maps summoners-rift"><input type="checkbox">S. RIFT</button>
-      <button class="maps aram"><input type="checkbox">ARAM</button>
-      <button class="maps treeline"><input type="checkbox">T. TREELINE</button>
+      <button class="maps summoners-rift"><input type="checkbox"> S. RIFT</button>
+      <button class="maps aram"><input type="checkbox"> ARAM</button>
+      <button class="maps treeline"><input type="checkbox"> T. TREELINE</button>
+      <button class="maps aram"><input type="checkbox"> DOMINION</button>
     </nav>  
   </section>
   <section class="main-content">
     <header class="search-title-header">
       <nav class="search-nav">
         <button class="search-buttons hamburger-button"><i class="fas fa-align-justify"></i></button>
-        <input type="text" class="search-box" placeholder="Search for a Champion"></input>
+        <button class="search-icon"><i class="fab fa-searchengin"></i></button>
+        <input type="text" class="search-box" placeholder="Search for a Champion">
         <button class="search-buttons league-icon"></button>
         <button class="search-buttons hex-icon"></button>
         <button class="search-buttons amumu-showcase"></button>
@@ -63,7 +65,7 @@
           <button class="main-nav profile">Profile</button>
           <button class="main-nav skills">Skills</button>
           <button class="main-nav lore">Lore</button>
-          <button class="main-nav biography">Biography</button>
+          <button class="main-nav biography">Bio</button>
           <button class="main-nav statistics">Stats</button>
           <button class="main-nav guides">Guides</button>
           <button class="main-nav links">Links</button>
@@ -108,32 +110,65 @@
           </svg>
           <figcaption>Assists</figcaption>
         </figure>
-        <figure class="bar-chart">
-          <figcaption></figcaption>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chart" width="420" height="200" aria-labelledby="title" role="img">
+        <figure class="bar-chart-one">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chart-one" width="500" height="250" dx="500" aria-labelledby="title" role="img">
+            <g class="bar bar1">
+              <rect width="19" height="100" x="30" y="85"></rect>
+              <text x="0" y="0" dy="13em">Pick Rate</text>
+              <text x="25" y="25" dy="3em">20%</text>
+            </g>
+            <g class="bar bar2">
+              <rect width="19" height="100" x="100" y="85"></rect>
+              <text y="0" x="80" dy="13em">Win Rate</text>
+              <text y="73" x="95" dy="0">56%</text>
+            </g>
+            <g class="bar bar3">
+              <rect width="19" height="150" x="185" y="35"></rect>
+              <text x="160" y="0" dy="13em">Ban Rate</text>
+              <text x="178" y="8" dy="1em">44%</text>
+            </g>
+            <g class="bar bar4">
+              <rect width="19" height="155" x="270" y="30"></rect>
+              <text x="240" y="0" dy="13em"> Jungle Rate</text>
+              <text x="265" y="0" dy="1em">56%</text>
+            </g>
+            <g class="bar bar5">
+              <rect width="19" height="50" x="360" y="137"></rect>
+              <text x="340" y="0" dy="13em">Popularity</text>
+              <text x="356" y="0" dy="7.8em">11%</text>
+            </g>
+            <g class="bar bar6">
+              <rect width="19" height="120" x="440" y="69"></rect>
+              <text x="420" y="0" dy="13em">Normals</text>
+              <text x="435" y="0" dy="3.5em">25%</text>
+            </g>
+          </svg>
+        </figure>
+         <figure class="bar-chart-two">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chart-two" width="420" height="200" aria-labelledby="title" role="img">
           <g class="bar bar1">
-            <rect width="240" height="19"></rect>
-            <text x="245" y="10" dy=".35em">14% Pick Rate</text>
+            <rect width="180" height="19"></rect>
+            <text x="185" y="10" dy=".35em">14% Pick Rate</text>
           </g>
           <g class="bar bar2">
-            <rect width="300" height="19" y="30"></rect>
-            <text x="305" y="40" dy=".35em">45% Win Rate</text>
+            <rect width="100" height="19" y="30"></rect>
+            <text x="105" y="40" dy=".35em">45% Win Rate</text>
           </g>
           <g class="bar bar3">
-            <rect width="395" height="19" y="60"></rect>
-            <text x="400" y="70" dy=".35em">20% Ban Rate</text>
+            <rect width="150" height="19" y="60"></rect>
+            <text x="155" y="70" dy=".35em">20% Ban Rate</text>
           </g>
           <g class="bar bar4">
-            <rect width="360" height="19" y="90"></rect>
-            <text x="365" y="100" dy=".35em">80% Jungle Rate</text>
+            <rect width="130" height="19" y="90"></rect>
+            <text x="135" y="100" dy=".35em">80% Jungle Rate</text>
           </g>
           <g class="bar bar5">
-            <rect width="330" height="19" y="120"></rect>
-            <text x="335" y="130" dy=".35em">30% Popularity</text>
+            <rect width="150" height="19" y="120"></rect>
+            <text x="155" y="130" dy=".35em">30% Popularity</text>
           </g>
           <g class="bar bar6">
-            <rect width="150" height="19" y="150"></rect>
-            <text x="155" y="160" dy=".35em">40% Normals</text>
+            <rect width="110" height="19" y="150"></rect>
+            <text x="115" y="160" dy=".35em">40% Normals</text>
           </g>
         </svg>
         </figure>
@@ -143,14 +178,13 @@
         <button class="graph-button picks-game">In-game stats</button>
       </section>
       <section class="line-breakpoint">
-        <hr class="section-table-breakpoint">
-        <hr class="section-table-breakpoint">
+        <hr class="section-table-breakpoint-left">
+        <hr class="section-table-breakpoint-right">
       </section>
       <section class="information-content">
-        <table "width: 100% class="champion-content-table">
+        <table class="champion-content-table">
           <tr class="table-header">
-            <td class="item-title">Description</td>
-            <td class="item-value table-button">asd</td>
+            <td class="item-title description">Description</td>
           </tr>
           <tr>
             <td class="item-title mr">Magic Resist.</td>
@@ -170,7 +204,7 @@
           </tr>
           <tr>  
             <td class="item-title background">Background</td>
-            <td class="item-value">Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his Cursed Touch touch is death, his affection ruin. Amumu has inspired myths, songs, and folklore told and retold for generations such that it is impossible to separate truth from fiction.</td>
+            <td class="item-value">Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his Cursed Touch touch is death, his affection ruin.</td>
           </tr>
           <tr> 
             <td class="item-title friends">Friends</td>
@@ -178,9 +212,8 @@
           </tr>
           <tr>
             <td class="item-title quotes">Quotes</td>
-            <td class="item-value">"Let me give you a hug"</td>
+            <td class="item-value quote">"Let me give you a hug"</td>
           </tr>
-
         </table>
         <section class="social-links">
           <section class="game-buttons">
@@ -188,33 +221,30 @@
             <button class="social youtube">Youtube</button>
             <button class="social telegram">Telegram</button>
           </section>  
-          <section class="footer-links">
+          <section class="all-send-links">
             <section class="send-links braum-quote">
-              <h4>asd</h4>
-              <p class="ingame-quote">"Time flies like an arrow, fruit flies like banana."</p>
-              <form class="links-form">
-                <input type="text" class="game-quotes">
-                <button>Copy</button>
-              </form>
+                <h4><i class="fas fa-quote-right"></i>Braum</h4>
+                <p class="ingame-quote">"Time flies like an arrow, fruit flies like banana."</p>
+                <form class="links-form">
+                  <input type="email" class="game-quotes" placeholder="https://www.leagueofgraphs.com/champions/stats/amumu">
+                  <button class="copy"></button>
+                </form>
+            </section>  
+            <section class="send-links ">
+                <h4><i class="fab fa-connectdevelop"></i>Teemo</h4>
+                <p class="ingame-quote">"The darker the night, the brighter the stars."</p>
+                <form class="links-form">
+                 <input type="email" class="game-quotes" placeholder="http://champion.gg/champion/Amumu/Jungle?">
+                  <button class="copy"></button>
+                </form>
             </section>
-            <hr class="links-breakpoint">
-            <section class="send-links">
-              <h4>asdfa</h4>
-              <p class="ingame-quote">"The darker the night, the brighter the stars."</p>
-              <form class="links-form">
-                <input type="text" class="game-quotes">
-                <button>Copy</button>
-              </form>
-            </section>
-            <hr class="links-breakpoint">
-            <section class="send-links">
-              <h4>Download</h4>
+            <section class="send-links zyra-quote">  
+              <h4><i class="fas fa-download"></i>Download</h4>
               <p class="ingame-quote">"Our seasons are reversed: my spring, your fall."</p>
               <form class="links-form">
-                <input type="text" class="game-quotes">
-                <button>Copy</button>
+                <input type="email" class="game-quotes" placeholder="https://na.leagueoflegends.com/en/creative-spotlight/curse-sad-mummy">
+                <button class="copy"></button>
               </form>
-            </section>
           </section>
           </section> 
         </section>
