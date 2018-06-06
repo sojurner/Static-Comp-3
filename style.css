@@ -988,11 +988,15 @@ h4 {
 
   .bar-chart-two {
     display: grid;
-    grid-column: span
+    grid-column: span;
+  }
+
+  .chart-two {
+    margin: 0 0 0 10vw;
   }
 
   .kda {
-    bottom: 19.5rem;
+    bottom: 19rem;
   }
 
   .picks-game {
@@ -1021,8 +1025,12 @@ h4 {
 
 @media screen and (max-width: 500px){
 
- .table-header {
+  .table-header {
     background-position: 11rem;
+  }
+
+  .chart-two {
+    margin: 0 0 0 -1rem;
   }
 
 @media screen and (max-width: 320px){
