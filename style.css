@@ -8,13 +8,9 @@ body {
 
 button {
   cursor: pointer;
-  filter: grayscale(1%);
-  transition: .5s ease;
+  transition: .3s ease;
 }
 
-button:hover {
-  filter: grayscale(50%);
-}
 /*Sidebar*/
 .profile-contents {  
   background-color: #32A984;
