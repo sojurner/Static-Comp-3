@@ -1,9 +1,4 @@
-@font-face {
-  font-family: Alcubierre;
-  src: url(Alcubierre.otf);
-}
-
-body{
+body {
   font: 100 18px system-ui;
   display: grid;
   width: 100%;
@@ -14,221 +9,8 @@ body{
 button {
   cursor: pointer;
 }
-
-.search-nav {
-  grid-template-columns: 4rem 1fr 4rem 4rem 4rem;
-  display: grid;
-  width: 100%;
-}
-
-.hamburger-button {
-  background: none;
-  font-size: 2rem;
-  color: #00BCD4;
-}
-
-.search-box {
-  display: inline-block;
-  background: none;
-  border: groove 1px #DBDBE6;;
-}
-
-.search-buttons {
-  border: groove 1px #DBDBE6;;
-  display: inline-block;
-  height: 3.8rem;
-  background-size: 3rem;
-  background-repeat: no-repeat;
-  background-position: 45% 30%;
-  background-color: #D0F0C0;
-}
-
-.search-buttons:hover {
-  background-color: #9EDEA0;
-  color: white;
-}
-
-.league-icon {
-  background-image: url("Images/league-of-legends.png");
-}
-
-.hex-icon {
-  background-image: url("Images/hex-icon.png");
-}
-
-.amumu-showcase {
-  background-image: url("Images/amumu-showcase.png");
-  background-size: 4rem;
-}
-
-.main-content {
-  background-color: #D0F0C0;
-  background-size: 90rem;
-}
-
-.curse-title {
-  font-family: Optima, sans-serif;
-  font-size: 3rem;
-  color: ;
-  margin: 0
-}
-
-.profile-header {
-  grid-template-rows: 1fr 1fr;
-  padding: 2rem 2rem 0 2rem;
-}
-
-.abilities-buttons {
-  position: relative;
-  bottom: 2rem;
-  display: grid;
-  grid-template-columns: 8rem 1fr 1fr 1fr;
-}
-
-.span-abilities-section {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.abilities {
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50px;
-  background-repeat:no-repeat;
-  background-size: 2.5rem;
-  margin: 0 .3rem;
-}
-
-.bandage-toss {
-  background-image: url("Images/bandage-toss.png");
-
-}
-
-.despair {
-  background-image: url("Images/despair.png");
-
-}
-
-.tantrum {
-  background-image: url("Images/tantrum.png");
-}
-
-.shurima {
-  height: 1.8rem;
-  width: 2rem;
-  background-image: url("Images/shurima.png");
-  background-size: 2rem;
-  margin: auto .5rem auto 0;
-  border: none;
-  background-color: #D0F0C0;
-}
-
-.title-header{
-  
-}
-.location {
- color: #AA915C;
- margin: 0;
-}
-
-.preview {
-  color: green;
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.preview:hover {
-  color: #4CC790;
-}
-
-.lol-button {
-  background-image: url("Images/lol-title.png");
-  background-size: 6rem;
-  background-color: #ABD050;
-  width: 6.5rem;
-  height: 2.5rem;
-  font-size: 1rem;
-  border-radius: 50px;
-  border: 1px groove #67AC5B;
-  background-position: 50% 0;
-}
-
-.content-nav {
-  margin: 2rem 0 0 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.main-nav {
-  font-size: 1rem;
-  width: 6rem;
-  height: 2rem;
-  border: none;
-  background: none;
-  cursor: pointer;
-  color: gray;
-  transition: font-weight .5s;
-}
-
-.main-nav:hover {
-  font-weight: 800;
-  color: black;
-  border-bottom: 3px solid #43A3F3;
-  color: #6a6e77;
-}
-
-
-main {
-  border: groove 2px #DBDBE6;
-  height: 100%;
-  background-color: #BDD95C;
-  background-size: 90rem;
-  filter: grayscale(40%);
-  filter: gray;
-  transition: 1s ease;
-  width: 100%;
-}
-main:hover {
-  filter:grayscale(10%);
-}
-
-.charts-graphs{
-  margin: 2rem 4rem 0 4rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 40rem;
-}
-
-
-}
-
-.kills,
-.deaths,
-.assists{
-}
-
-
-.charts-buttons {
-  margin: 0 16rem 0 25rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.graph-button {
-  height: 2rem;
-  width: 13rem;
-  font-size: 1rem;
-  border-radius: 50px;
-  border: solid 2px #2aa3cc; 
-  background: none;
-}
-
-.picks-game {
-  width: 9rem;
-}
-
+/*Sidebar*/
 .profile-contents {  
-  min-width: 12rem;
   background-color: #32A984;
   color: #0a0a0a;
   border-right: 1px solid #c2c2c2;
@@ -237,31 +19,39 @@ main:hover {
   box-sizing: inherit;
 }
 
-.line-breakpoint {
+.aside-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 2rem 0 1.5rem 0;
-  width: 102%;
-  background-image: url("Images/up-arrow.png");
-  background-size: 2rem;
+  align-items: center;
+}
+
+.amumu-logo {
+  border-radius: 50px;
+  background-color: #8AB996;
+  background-image: url("Images/Amumu-profile.png");
+  background-size: 5rem;
+  height: 5rem;
+  width: 5rem;
   background-repeat: no-repeat;
-  background-position: 50%;
+  margin: 2rem 0 1rem 0;
+  cursor: pointer;
 }
 
-.section-table-breakpoint {
-    width: 42%;
-    padding: 0;
-    margin: 2.2rem 1.5rem
+.amumu-logo:hover {
+  background-image: url("Images/amumu.gif");
 }
 
-.information-content {
-  margin: 4rem 0 4rem 0;
-  display: grid;
-  grid-template-columns: 3fr 1fr; 
+.amumu {
+  font: 800 18px system-ui;
+  color: #EDDC8B;
+  text-align: center;
+  margin-top: 0;
 }
 
 .position,
-.miscellaneous {
+.miscellaneous,
+.mapss {
   list-style-type: none;
   margin:0;
   padding:0;
@@ -270,17 +60,13 @@ main:hover {
   grid-template-rows:1fr 1fr 1fr 1fr 1fr;
 }
 
-.c {
-  list-style-type: none;
-  margin:0;
-  padding: 0;
-  color: yellow;
-  display: grid;
+.mapss {
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .aside-title {
-  color: #00BCD4;
+  font-weight: 500;
+  color: #D0F0C0;
   font-size: .8rem;
   background-color: #008B7D;
   border-color: #008B7D;
@@ -294,7 +80,7 @@ main:hover {
 .role,
 .misc,
 .maps {
-  padding:1rem 3rem;
+  padding: 1rem 3rem;
   background-color: #32A984;
   background-repeat: no-repeat;
   font-size: .8rem;
@@ -370,6 +156,7 @@ main:hover {
   background-size: 1.8rem;
   background-position: .5rem .6rem;
 }
+
 .summoners-rift {
   background-image: url("Images/top-lane.png");
 }
@@ -380,46 +167,416 @@ main:hover {
 
 .treeline {
   background-image: url("Images/bot-lane.png");
-
 }
 
-.aside-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/*main body*/
+.main-content {
+  background-color: #D0F0C0;
 }
 
-.amumu-logo {
-  border-radius: 50px;
-  background-color: #8AB996;
-  background-image: url("Images/Amumu-profile.png");
-  background-size: 5rem;
-  height: 5rem;
-  width: 5rem;
+/*Header,Search navigation bar*/
+.search-nav {
+  grid-template-columns: 4rem 2rem 1fr 4rem 4rem 4rem;
+  display: grid;
+  width: 100%;
+}
+
+.search-icon {
+  background-color: #D0F0C0;
+  border-left: none;
+  border-right: none;
+  border-top: groove 1px #DBDBE6;
+  border-bottom: groove 1px #DBDBE6;
+}
+
+.fab {
+  font-size: 1.5rem;
+  padding: .3rem 0 0 0;
+}
+
+.hamburger-button {
+  background-image: url("Images/craft-key.png");
+  font-size: 2rem;
+  color: #00BCD4;
+}
+
+.fa-align-justify {
+  display: none;
+}
+
+.search-box {
+  background-image: url("Images/dab-png.png");
+  display: inline-block;
+  background: none;
+  border: groove 1px #DBDBE6;
+  border-left: none;
+}
+
+.search-box::placeholder {
+  font-size: 1.5rem;
+  vertical-align: 100px;
+}
+
+input[type="text"] {
+  font-size:2rem;
+}
+
+.search-buttons {
+  border: groove 1px #DBDBE6;;
+  display: inline-block;
+  height: 3.8rem;
+  background-size: 2.7rem;
   background-repeat: no-repeat;
-  margin: 2rem 0 1rem 0;
+  background-position: 45% 30%;
+  background-color: #D0F0C0;
+  border-left: none;
+}
+
+.search-buttons:hover {
+  background-color: #9EDEA0;
+  color: white;
+}
+
+.search-title-header {
+  z-index: 1;
+  position: sticky;
+  bottom: 0;
+  top: 0;
+  background-color: #D0F0C0;
+}
+
+.league-icon {
+  background-image: url("Images/league-of-legends.png");
+}
+
+.hex-icon {
+  background-image: url("Images/hex-icon.png");
+}
+
+.amumu-showcase {
+  background-image: url("Images/league-circle-button.png");
+  background-size: 3.4rem;
+}
+
+/*title header*/
+.curse-title {
+  font-family: Optima, sans-serif;
+  font-size: 3rem;
+  color: ;
+  margin: 0
+}
+
+.profile-header {
+  grid-template-rows: 1fr 1fr;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.abilities-buttons {
+  position: relative;
+  bottom: 2rem;
+  display: grid;
+  grid-template-columns: 8rem 1fr 1fr 1fr;
+}
+
+.span-abilities-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.abilities {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50px;
+  background-repeat:no-repeat;
+  background-size: 2.5rem;
+  margin: 0 .3rem;
+}
+
+.bandage-toss {
+  background-image: url("Images/bandage-toss.png");
+
+}
+
+.despair {
+  background-image: url("Images/despair.png");
+
+}
+
+.tantrum {
+  background-image: url("Images/tantrum.png");
+}
+
+.shurima {
+  height: 1.8rem;
+  width: 2rem;
+  background-image: url("Images/shurima.png");
+  background-size: 2rem;
+  margin: auto .5rem auto 0;
+  border: none;
+  background-color: #D0F0C0;
+}
+
+.location {
+  color: #AA915C;
+  margin: 0;
+}
+
+.preview {
+  color: green;
+  margin: 1rem;
   cursor: pointer;
 }
 
-.amumu-logo:hover {
-  background-image: url("Images/amumu.gif");
+.preview:hover {
+  color: #4CC790;
 }
 
-.amumu {
-  font: 800 18px system-ui;
-  color: #EDDC8B;
+.lol-button {
+  background-image: url("Images/lol-title.png");
+  background-size: 6rem;
+  background-color: #D0F0C0;
+  background-repeat: no-repeat;
+  width: 7rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 2px groove #67AC5B;
+  background-position: 50% 0;
+}
+
+/*content navigation*/
+.content-nav {
+  margin: 2rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main-nav {
+  font-size: 1rem;
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: gray;
+  transition: font-weight .5s;
+}
+
+.main-nav:hover {
+  font-weight: 800;
+  color: black;
+  border-bottom: 3px solid #43A3F3;
+  color: #6a6e77;
+}
+
+/*main content*/
+main {
+  border: groove 2px #DBDBE6;
+  height: 100%;
+  background-color: #BDD95C;
+  background-size: 90rem;
+  filter: grayscale(40%);
+  filter: gray;
+  transition: 1s ease;
+}
+
+main:hover {
+  filter:grayscale(10%);
+}
+
+/*charts + graph*/
+.charts-graphs{
+  margin: 2rem 5rem 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 40rem;
+}
+
+.charts-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.graph-button {
+  height: 2rem;
+  width: 13rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: solid 2px #2aa3cc; 
+  background: none;
+}
+
+.picks-game {
+  width: 9rem;
+}
+
+/*circle graphs*/
+
+.circular-chart {
+  margin: 0;
+  max-width: 14rem;
+  min-width: 10rem;
+}
+
+.circle {
+  stroke: #4CC790;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circle:hover {
+  stroke: #0BDD6C;
+}
+
+figcaption {
   text-align: center;
-  margin-top: 0;
-
 }
 
+.kills,
+.assists,
+.deaths {
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/*BAR graphs*/
+.bar {
+  fill: #aaa;
+  height: 100px;
+  transition: fill .3s ease;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.bar-chart-one{
+  margin: 0 3rem;
+}
+
+.bar-chart-two {
+  display: none;
+}
+
+.chart-one {
+  margin-top: 1rem;
+}
+
+.chart-two{
+  margin: 1rem 0 0 -3rem;
+  padding: 0 10rem 2rem 0;
+}
+
+.bar:hover,
+.bar:focus {
+  fill: #4cc790;
+}
+
+.bar1,
+.bar4 {
+  fill: green;
+}
+
+.bar2,
+.bar5 {
+  fill: #6FB8F6;
+}
+
+.bar3,
+.bar6 {
+  fill: #8DB711;
+}
 
 .kill-number,
 .death-number,
 .assist-number {
-  font-size: .4rem;
   color: yellow;
+  font-size: .4rem;
+}
+
+.line-breakpoint {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1.5rem 0;
+  width: 100%;
+  background-image: url("Images/up-arrow.png");
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.section-table-breakpoint-left {
+  width: 46%;
+  padding: 0;
+}
+
+.section-table-breakpoint-right {
+  width: 46%;
+  padding: 0;
+}
+
+/*table + side links*/
+.information-content {
+  margin: 4rem 0 4rem 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+}
+
+.champion-content-table {
+  height: 40rem;
+  padding: 0 4rem;
+  border-collapse: collapse;
+  margin: 0 0 0 3rem;
+  border-width: initial;
+}
+
+.table-header{
+  background-color: #32A984;
+  background-image: url(Images/victory.png);
+  background-size: 10rem;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 12rem;
+  color: #D0F0C0;
+}
+
+.table-header:hover{
+  background-color: #32A984;
+}
+
+tbody tr {
+  display: flex;
+  color: rgb(111, 126, 149);
+  margin: 0px auto;
+  padding: 0 3rem 0 3rem;
+}
+
+tr {
+  background-color: #9EDEA0;
+  filter: grayscale(0);
+  filter: gray;
+  transition: .5s ease;
+}
+
+tr:hover {
+  background-color: #C4D2A4;
+}
+
+.item-value,
+.item-title {
+  padding: 2.5rem 0;
+  border: 1px groove lightgray;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding-right: 5rem;
 }
 
 .item-title {
@@ -427,51 +584,12 @@ main:hover {
   background-repeat: no-repeat;
   background-size: 3rem;
   background-size: 3rem;
-  background-position: 75% 45%;
+  background-position: 80% 45%;
+  font-weight: 800;
 }
 
 .item-value {
-  width: 30rem;
-  padding-left: 0;
-
-}
-.champion-content-table {
-  min-width: 37rem;
-  height: 40rem;
-  padding: 0 4rem;
-  border-collapse: collapse;
-  margin: 0 0 0 4rem;
-}
-
-td {
-  vertical-align: baseline;
-  padding: 2rem 2rem 2rem 2rem;
-  border: 1px groove lightgray;
-  border-left: none;
-  border-right: none;
-}
-
-.table-header{
-  background-image: url(Images/amumu-smiling.png);
-  background-size: 3rem;
-  background-position: 20% 35%;
-  background-repeat: no-repeat;
-  background-color: #9EDEA0;
-}
-}
-.table-header:hover{
-  filter: grayscale(0);
-}
-
-tr {
-  background-color: #D0F0C0;
-  filter: grayscale(0);
-  filter: gray;
-  transition: .5s ease;
-
-}
-tr:hover {
-  background-color: #D7EA4E;
+  width: 65%;
 }
 
 .mr {
@@ -488,51 +606,51 @@ tr:hover {
 
 .mana {
   background-image: url("Images/ghost-rune.png");
-
 }
 
 .background {
-
   background-image: url("Images/lore-png.png");
-  background-size: 7rem;
-  background-position: 82%;
-
+  background-size: 6rem;
+  background-position: 90%;
 }
 
 .friends {
   background-image: url("Images/friends.png");
   background-size: 3.5rem;
-  background-position-x : 76%
+  background-position-x : 80%;
+}
 
+.quote, .quotes {
+  border-bottom: none;
 }
 
 .quotes {
   background-image: url("Images/quotes-png.png");
 }
 
-
+/*social-game buttons + social links*/
 .game-buttons {
   display: flex;
   flex-direction: column;
 }
 
 .social-links{
+  margin: 0 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
 .social {
   padding: 13px 35px 12px;
   height: 3.4rem;
-  width: 22vw;
+  width: 19rem;
   font-size: 1rem;
   color: #fff;
   border: none;
   background-size: 3rem;
   background-repeat: no-repeat;
-  margin: .5rem ;
+  margin: .5rem 0;
   border-radius: 5px;
   letter-spacing: .2rem;
 }
@@ -577,107 +695,48 @@ tr:hover {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 0 2.4rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid gray;
+  border-bottom-width: 10rem: 
+}
+h4 {
+  margin: 0;
+}
+
+.zyra-quote {
+  border: none;
 }
 
 .braum-quote {
-  margin-top: 2rem;
+  padding-top: 3rem;
 }
 
-hr{
-  margin: 2.2rem 2.5rem;
-  width: 22.5vw;
+.fa-connectdevelop,
+.fa-download,
+.fa-quote-right{
+  margin-right: 1rem
 }
 
-h4 {
-  margin:0;
+.game-quotes::placeholder {
+  font-size: 1rem;
 }
 
-.ingame-quote {
-
-}
-
-
-figcaption {
-  text-align: center;
-}
-
-
-.circular-chart {
-  display: block;
-  margin: 0;
-  max-width: 10rem;
-
-  min-width: 10rem;
-
-}
-
-.kills,
-.assists,
-.deaths {
-  margin: auto;
-}
-
-
-.circle {
-  stroke: #4CC790;
-  fill: none;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
-.bar {
-  fill: #aaa;
-  height: 100px;
-  transition: fill .3s ease;
+.copy {
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+  background-image: url(Images/green-copyfile.png);
+  width: 3rem;
   cursor: pointer;
-  font-family: Helvetica, sans-serif;
-  
-  text {
-    fill: #555;
+  background-position: 40% 40%;
+  background-color: #D0F0C0;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1425px){
+
+  .circular-chart {
+    width: 14rem
   }
-}
-
-.chart{
-  margin: 1rem 0 0 4rem;
-  padding: 0 10rem 0 0;
-
-}
-.chart:hover,
-.chart:focus {
-  .bar {
-    fill: black;
-  }
-}
-/*BAR GRAPHS*/
-.bar:hover,
-.bar:focus {
-  fill: #4cc790;
-}
-
-.bar1,
-.bar4 {
-  fill: green;
-}
-.bar2,
-.bar5 {
-  fill: #6FB8F6;
-}
-.bar3,
-.bar6 {
-  fill: #8DB711;
-}
-
-
-
-@media screen and (max-width: 1380px){
 
   .charts-graphs{
     display: grid;
@@ -685,43 +744,9 @@ figcaption {
     grid-template-rows: 1fr 1fr;
   }
 
-  .bar-chart{
+  .bar-chart-one{
     margin: 3rem auto;
     grid-column: 3 span;
-  }
-
-  .information-content {
-    margin: 4rem 0 4rem 0;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .links-breakpoint {
-    display: none;
-  }
-
-  .game-buttons {
-    flex-direction: row;
-  }
-  .social {
-    margin: 2rem .5rem;
-  }
-
-  .champion-content-table {
-    margin: 0 5vw;
-  }
-
-  .footer-links {
-    flex-direction: row;
-    margin: 0 6.5vw;
-  }
-
-  .braum-quote {
-    margin: 0;
-  }
-
-  .send-links {
-    padding: 0 .5rem;
   }
 
   .charts-buttons {
@@ -733,32 +758,251 @@ figcaption {
 
   .kda {
     position: relative;
-    bottom: 22rem;
+    bottom: 25rem;
   }
 
   .picks-game {
     position: relative;
-    bottom: 5rem;
+    bottom: 6rem;
   }
 
   .line-breakpoint {
-    margin-top: -2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
+
+  .links-breakpoint {
+    display: none;
+  }
+
+  .information-content {
+    margin: 4rem 0 4rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .game-buttons {
+    flex-direction: row;
+  }
+
+  .social-links{
+    margin: 0 4rem;
+  }
+
+  .social {
+    margin: 2rem .5rem;
+  }
+
+  .all-send-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .send-links {
+    border-bottom: none;
+  }
+
+  .braum-quote {
+    margin: 0;
+  }
+
+  .champion-content-table {
+    margin: 0 4rem;
+  }
+
+   .item-value {
+    width: 67%;
+  } 
 }
 
 @media screen and (max-width: 1280px){
   
+   body {
+    font: 100 18px system-ui;
+    width: 100%;
+    margin: 0;
+  }
+
   .profile-contents{
     display: none;    
   }
 
-  body {
-    font: 100 18px system-ui;
+  .hamburger-button {
+    background: none;
+  }
+
+  .fas, .far {
+    display: initial;
+  }
+
+  .main-content{
+    grid-column: span 2;
+  }
+
+  .abilities-buttons {
+    position: initial;
+  }
+
+  .social-links {
     display: grid;
-    width: 100%;
-    margin: 0;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .game-buttons {
+    display: grid;
+  }
+
+  .all-send-links {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 
-@media screen and (max-width: 810px){
+@media screen and (max-width: 1000px){
+  
+  .charts-buttons{
+    margin: 0;
+  }
+  
+  .item-value {
+    padding-left: 1rem;
+  } 
+
+  .item-title {
+    background-position: 10rem;
+  }
+
+  .background {
+    background-position: 120%;
+  }
+}
+
+@media screen and (max-width: 880px){
+
+  .abilities-buttons {
+    margin: 1rem 0;
+  }
+
+  .content-nav {
+    margin: 1rem 0 0 0
+  }
+
+  .profile-header {
+    height: 11.1rem;
+  }
+
+  .charts-graphs {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .bar-chart-one {
+    grid-column: span 1;
+  }
+
+  .champion-content-table {
+    margin: 0;
+  }
+
+  .table-header{
+    background-position: 37vw;
+  }
+
+  .item-value {
+    padding-left: 5rem;
+  }
+
+  .item-title {
+    background-position: 14rem;
+  }
+ 
+  .mr,
+  .health-regen,
+  .armor, 
+  .mana,
+  .background,
+  .friends, 
+  .quotes {
+    background-image: none;
+  }
+
+  .main-nav {
+    width: 3rem;
+    font-size: .8rem
+  }
+
+  .social-links {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .all-send-links {
+    margin: auto 2rem;
+  }
+
+  .social {
+    margin: 1rem auto
+  }
+
+@media screen and (max-width: 700px){
+   
+   .span-abilities-section {
+    display: grid;
+  }
+
+  .curse-title {
+    font-size: 23px;
+  }
+
+  .chart-two {
+    padding: 5rem 10rem 2rem 0;
+    height: 9rem;
+  }
+
+  .bar-chart-one {
+    display: none;
+  }
+
+  .bar-chart-two {
+    display: grid;
+    grid-column: span
+  }
+
+  .kda {
+    bottom: 19.5rem;
+  }
+
+  .picks-game {
+    bottom: 2rem;
+  }
+
+  input[type="text"] {
+    font-size: .6rem;
+  }
+
+  .item-value {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+@media screen and (max-width: 600px){
+  
+  .item-title{
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px){
+
+ .table-header {
+    background-position: 11rem;
+  }
+
+@media screen and (max-width: 321px){
+
+  .main-content {
+    width: 125vw;
+  }
+}
