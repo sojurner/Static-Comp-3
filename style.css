@@ -866,7 +866,7 @@ h4 {
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1050px){
   
   .charts-buttons{
     margin: 0;
@@ -907,6 +907,7 @@ h4 {
 
   .bar-chart-one {
     grid-column: span 1;
+    margin-top: 6rem;
   }
 
   .champion-content-table {
@@ -943,7 +944,12 @@ h4 {
 
   .kda {
     position: relative;
-    bottom: 22.5rem;
+    bottom: 25rem;
+    right: 1rem;
+  }
+
+  .picks-game {
+    right: 1rem;
   }
 
   .social-links {
@@ -957,7 +963,8 @@ h4 {
   }
 
   .social {
-    margin: 1rem auto
+    margin: 1rem auto;
+    width: 23rem;
   }
 
 @media screen and (max-width: 700px){
