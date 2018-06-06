@@ -351,6 +351,10 @@ input[type="text"] {
   background-position: 50% 0;
 }
 
+.lol-button:hover {
+  background-color: #AA915C;
+}
+
 /*content navigation*/
 .content-nav {
   margin: 2rem 0 0 0;
