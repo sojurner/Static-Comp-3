@@ -393,7 +393,7 @@ main:hover {
 
 /*charts + graph*/
 .charts-graphs{
-  margin: 2rem 5rem 0 5rem;
+  margin: 2rem 5rem 0 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
 }
@@ -770,7 +770,7 @@ h4 {
 
   .picks-game {
     position: relative;
-    bottom: 6rem;
+    bottom: 6.5rem;
   }
 
   .line-breakpoint {
@@ -902,6 +902,7 @@ h4 {
   .charts-graphs {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 74rem;
   }
 
   .bar-chart-one {
@@ -938,6 +939,11 @@ h4 {
   .main-nav {
     width: 3rem;
     font-size: .8rem
+  }
+
+  .kda {
+    position: relative;
+    bottom: 22.5rem;
   }
 
   .social-links {
