@@ -1,7 +1,9 @@
-# Static-Comp-3
+# Amumu: The Sad Mummy
+[GH Pages Link](https://sojurner.github.io/Static-Comp-3/)
 
-### Rubric:
-http://frontend.turing.io/projects/m1-static-comp-3.html
+* Profile for Amumu the Sad Mummy.  
+* He is a little less sad now that i made this in his honor...
 
-### Theme:
-Amumu: The Sad Mummy.
+### ScreenShot
+![amumu](https://user-images.githubusercontent.com/35910428/47958563-090f8a00-df93-11e8-93da-f130dbcd745a.gif)
+
